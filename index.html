@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet"  href="build/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+</head>
+<body class="body d-flex justify-content-center">
+  <div class= "container-fluid main-container m-4">
+    <header class= "container-fluid header-container m-3 text-center">
+      <h1>My library</h1>
+    </header>
+  <div class="container form-container p-3">
+    <button class="btn btn-primary" id="show-form">Add a new book</button>
+    <form class="form-inline hidden" id="addBookForm">
+      <label class="sr-only" for="title">Title</label>
+      <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="title" placeholder="Title">
+
+      <label class="sr-only" for="author">Author</label>
+      <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="author" placeholder="Author">
+
+      <label class="sr-only" for="pages">Number of pages</label>
+      <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="pages" placeholder="Number of pages">
+
+      <div class="form-check form-check-inline">
+        <label class="form-check-label d-flex justify-content-around">
+          <span>Have read?</span>
+          <input class="form-check-input" type="checkbox" id="read" value="read">
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary" id="add-book">Add book</button>
+    </form>
+  </div>
+
+  <div class="container cards-container p-4">
+    <div class="card-deck d-flex flex-wrap" id="cards">
+      <div class="card">
+        <div class="card-block" id="card">
+          <h4 class="card-title" id="title">Title example</h4>
+          <h6 class="card-subtitle mb-2 text-muted" id="author">author example</h6>
+          <p class="card-text" id="pages">pages example</p>
+          <p class="card-text" id="read">haveread example</p>
+          <div class="card-buttons">
+            <button type="button" class="btn btn-warning read-button">Have read?</button>
+            <button type="button" class="btn btn-danger remove-button" data-id="0">Remove book</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

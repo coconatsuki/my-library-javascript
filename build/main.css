@@ -1,0 +1,45 @@
+.body {
+  background: url("../img/library.jpg") no-repeat;
+  width: 100%;
+  height: 100%; }
+
+.main-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 80%; }
+
+.hidden {
+  display: none; }
+
+.form-check.form-check-inline {
+  width: 15%; }
+  .form-check.form-check-inline .form-check-label {
+    width: 100%; }
+
+header.header-container h1 {
+  font-family: 'Courgette', arial, "times new roman", serif, cursive;
+  font-size: 4.5em; }
+
+.header-container {
+  border-bottom: 2px solid black; }
+
+.card {
+  min-width: 22%;
+  max-width: 22%;
+  margin-top: 2%; }
+
+.card-block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .card-block h4, .card-block h6, .card-block p {
+    margin-bottom: 5% !important; }
+
+.card-buttons {
+  display: flex;
+  justify-content: space-around; }
+  .card-buttons button {
+    width: 50%;
+    font-size: 0.9em; }
+  .card-buttons .read-button {
+    margin-right: 1%; }
